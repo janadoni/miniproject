@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Inconsolata:wght@600&family=Inter:wght@100&family=Lexend+Deca:wght@100&family=Outfit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Corinthia:wght@700&family=Inconsolata:wght@600&family=Inter:wght@100&family=Lexend+Deca:wght@100&family=Meow+Script&family=Outfit:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsola',sans-serif;
+}
+.body{
+  padding: .3rem;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+.header{
+    background:white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    position: fixed;
+
+}
+/*logo and university heading starts*/
+.header .menu{
+    display: flex;
+    gap: 1.2rem;
+    margin-left: 50px;
+}
+.header .menu .image img{ 
+    height: 130px;
+    object-fit: cover;
+
+}
+.header .menu .uni-head{
+    display: flex;
+    justify-content: center;
+  position:relative;
+  top:20px
+}
+.header .menu .uni-head h2{
+    font-family: cursive;
+}
+.header .menu .uni-head h2 .first{
+    font-family:  'corintha',cursive;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: red;
+}
+/*logo and university heading ends*/
+
+
+
+/*menu section starts*/
+.header ul{
+    display: flex;
+    gap: 0rem;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+}
+.header ul li{
+    list-style-type: none;
+    
+}
+.header ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    position: relative;
+}
+.header ul li a:hover{
+    color: red;
+    transition: 0.5s;
+}
+.header ul li a::after{
+    content: ' ';
+    background: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+.header ul li a:hover::after{
+    background: red;
+    width: 100%;
+}
+/* menu section ends*/
+
+/* sub menu starts*/
+ li{
+    
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+ 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 3px;
+    right: 0;
+
+  }
+  
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-transform:capitalize;
+  text-align: left;
+
+  }
+  
+
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+
+  .dropdown:hover .dropdown-content {display: block;}
+  
+
+  .dropdown:hover li a { 
+      color: red;
+      position: relative;
+} 
+  .dropdown:hover li a::after{
+    content: ' ';
+    background: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    margin-top: 15px;
+    transition: 0.5s;
+  }
+
+  /*sub menu ends*/
+  /* search section starts*/
+  .header .search{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    margin-right: 20px;
+  }
+  .header .search i{
+    color: coral;
+  }
+ .search-bar{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: black;
+   opacity: .5;
+   display: none;
+  
+ }
+ .search-bar input{
+   border: 2px solid rgb(180, 118, 4);
+   padding: 10px;
+   border-radius:5px ;
+   outline: none;
+   width: 30%;
+ }
+ .search-bar input::placeholder{
+   font-size: 15px;
+   color: rgb(133, 80, 1);
+   font-weight: bold;
+ }
+ .search-bar input:hover{
+   background-color: rgba(255, 166, 0, 0.2);
+ }
+ .search-bar .search-container{
+   margin-left: 20px;
+   color: orange;
+ }
+
+ .search a:hover .search-bar{
+   display: inline-block;
+ }
+ .search-bar .icon{
+   position: absolute;
+   top:10%;
+   right: 3%;
+   font-size: 30px;
+   color: orange;
+ }
+ 
